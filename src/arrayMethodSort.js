@@ -21,11 +21,11 @@ function applyCustomSort() {
 
         let comparison;
 
-        if (a === undefined) {
+        if (a === undefined && b === undefined) {
+          comparison = 0;
+        } else if (a === undefined) {
           comparison = 1;
-        }
-
-        if (b === undefined) {
+        } else if (b === undefined) {
           comparison = -1;
         }
 
